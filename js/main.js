@@ -33,6 +33,11 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 (function () {
   const translations = {
     en: {
+      // Hero
+      'hero.title': 'English with Farida',
+      'hero.subtitle': 'General English, Speaking Club, IELTS etc.',
+      'hero.cta': 'Contact',
+
       'nav.about': 'About',
       'nav.experience': 'Experience',
       'nav.courses': 'Courses',
@@ -92,6 +97,11 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'footer.role': 'English Tutor',
     },
     ru: {
+      // Hero
+      'hero.title': 'Английский с Фаридой',
+      'hero.subtitle': 'Общий английский, разговорный клуб, IELTS и т.д.',
+      'hero.cta': 'Связаться',
+
       'nav.about': 'Обо мне',
       'nav.experience': 'Опыт',
       'nav.courses': 'Курсы',
