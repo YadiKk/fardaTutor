@@ -13,7 +13,10 @@
 <body>
   <header class="site-header" id="home">
     <nav class="nav">
-      <a class="logo" href="#home">Farida</a>
+      <a class="logo" href="#home">
+        <img src="Ph/logo.jpg" alt="Farida logo" class="logo-img" loading="lazy">
+        <span class="logo-text">Farida</span>
+      </a>
       <ul class="nav-list">
         <li><a href="#about" data-i18n="nav.about">About</a></li>
         <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
@@ -21,10 +24,12 @@
         <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
         <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
-      <select id="lang" aria-label="Language">
-        <option value="en">EN</option>
-        <option value="ru">RU</option>
-      </select>
+      <div class="lang-wrap">
+        <select id="lang" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+        </select>
+      </div>
     </nav>
     
   </header>
