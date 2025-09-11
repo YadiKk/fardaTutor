@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speaking Club — English with Farida</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Speaking Club flow and structure: small talk, impressions, vocabulary work, communication tasks, feedback.">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html#home">
+        <img src="Ph/logo.jpg" alt="Farida logo" class="logo-img" loading="lazy">
+        <span class="logo-text">Farida</span>
+      </a>
+      <ul class="nav-list">
+        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+        <li><a href="index.html#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="index.html#courses" data-i18n="nav.courses">Courses</a></li>
+        <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="speaking-club.html" data-i18n="nav.sc">Speaking Club</a></li>
+      </ul>
+      <div style="display:flex; gap:8px; align-items:center;">
+        <a href="index.html" class="btn back-btn">← <span data-i18n="back">Back</span></a>
+        <div class="lang-wrap">
+          <select id="lang" aria-label="Language">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section sc-hero">
+      <div class="container">
+        <h1 data-i18n="sc.title">Ход Speaking club</h1>
+        <p class="small" data-i18n="sc.subtitle">TG @AMUR_ENGLISH — Speaking and Movie Clubs</p>
+      </div>
+    </section>
+
+    <section class="section sc-timeline">
+      <div class="container">
+        <div class="sc-flow">
+          <div class="sc-col left">
+            <div class="sc-block">
+              <span class="sc-badge" data-i18n="sc.t5">5min</span>
+              <h3 data-i18n="sc.left1.title">ОБМЕН ВПЕЧАТЛЕНИЯМИ ОТ ПРОСМОТРА</h3>
+              <p class="note" data-i18n="sc.left1.note">что понравилось/не понравилось, что было сложно и т.д.</p>
+            </div>
+            <div class="sc-block">
+              <span class="sc-badge" data-i18n="sc.t10">10min</span>
+              <h3 data-i18n="sc.left2.title">ЗАДАНИЯ НА КОММУНИКАЦИЮ</h3>
+              <p class="note" data-i18n="sc.left2.note">вопросы, составить рейтинг, решить проблему и т.д.</p>
+            </div>
+          </div>
+          <div class="sc-center">
+            <span class="sc-dot"></span>
+            <span class="sc-dot"></span>
+            <span class="sc-dot"></span>
+            <span class="sc-dot"></span>
+            <span class="sc-dot"></span>
+          </div>
+          <div class="sc-col right">
+            <div class="sc-block">
+              <span class="sc-badge" data-i18n="sc.t5">5min</span>
+              <h3 data-i18n="sc.right1.title">ЗНАКОМСТВО / SMALL TALK</h3>
+              <p class="note" data-i18n="sc.right1.note">Краткое приветствие</p>
+            </div>
+            <div class="sc-block">
+              <span class="sc-badge" data-i18n="sc.t30">30min</span>
+              <h3 data-i18n="sc.right2.title">РАБОТА С ЛЕКСИКОЙ</h3>
+              <p class="note" data-i18n="sc.right2.note">совместить слово с описанием, вставить пропуски и т.д.</p>
+            </div>
+            <div class="sc-block">
+              <span class="sc-badge" data-i18n="sc.t10">10min</span>
+              <h3 data-i18n="sc.right3.title">FEEDBACK</h3>
+              <p class="note" data-i18n="sc.right3.note">разбор ошибок, обратная связь, обмен впечатлениями</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Farida — <span data-i18n="footer.role">English Tutor</span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

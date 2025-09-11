@@ -38,18 +38,29 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'hero.subtitle': 'General English, Speaking Club, IELTS etc.',
       'hero.cta': 'Contact',
 
+      // Nav
       'nav.about': 'About',
       'nav.experience': 'Experience',
       'nav.courses': 'Courses',
       'nav.pricing': 'Pricing',
       'nav.contact': 'Contact',
+      'nav.sc': 'Speaking Club',
 
-      'about.title': 'About Farida',
-      'about.p': 'Hi, I’m Farida — an English tutor helping teens and adults reach their goals. My lessons focus on real-life speaking, clear grammar, and vocabulary you’ll actually use. I keep classes friendly, structured, and motivating.',
-      'about.li1': 'Beginner to advanced levels',
-      'about.li2': 'Personal study plan and homework',
-      'about.li3': 'Flexible schedule (online)',
+      // Courses
+      'courses.title': 'Courses',
+      'courses.c1.title': 'Trial Lesson (25 min)',
+      'courses.c1.p': 'Meet, set goals, check your level, and build a plan together.',
+      'courses.c2.badge': 'Popular',
+      'courses.c2.title': 'Speaking Club (60 min, group)',
+      'courses.c2.p': 'Fun topics, real conversation, and feedback to boost fluency.',
+      'courses.c2.button': 'View details',
+      'courses.c3.badge': 'Best for 1:1',
+      'courses.c3.title': '1:1 Lessons (45–60 min)',
+      'courses.c3.p': 'Tailored classes for grammar, vocabulary, and confident speaking.',
+      'courses.c4.title': 'IELTS Prep (1:1)',
+      'courses.c4.p': 'Score-focused program with mock tests and task-by-task guidance.',
 
+      // Experience
       'exp.title': 'Experience',
       'exp.p': 'I’ve guided learners through speaking clubs, exam prep, and day‑to‑day English for study and work. Students say they feel safe to speak, make mistakes, and improve fast.',
       'exp.c1.title': 'Speaking Club Host',
@@ -59,18 +70,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'exp.c3.title': '1:1 Coaching',
       'exp.c3.p': 'Custom programs for travel, work interviews, or university study abroad.',
 
-      'courses.title': 'Courses',
-      'courses.c1.title': 'Trial Lesson (25 min)',
-      'courses.c1.p': 'Meet, set goals, check your level, and build a plan together.',
-      'courses.c2.badge': 'Popular',
-      'courses.c2.title': 'Speaking Club (60 min, group)',
-      'courses.c2.p': 'Fun topics, real conversation, and feedback to boost fluency.',
-      'courses.c3.badge': 'Best for 1:1',
-      'courses.c3.title': '1:1 Lessons (45–60 min)',
-      'courses.c3.p': 'Tailored classes for grammar, vocabulary, and confident speaking.',
-      'courses.c4.title': 'IELTS Prep (1:1)',
-      'courses.c4.p': 'Score-focused program with mock tests and task-by-task guidance.',
-
+      // Pricing
       'pricing.title': 'Pricing',
       'pricing.trial.title': 'Trial Lesson',
       'pricing.trial.amount': 'Free',
@@ -89,11 +89,31 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'pricing.note.pre': 'Need a custom plan (packages or corporate)?',
       'pricing.note.link': 'Contact me',
 
+      // Contact
       'contact.title': 'Contact',
       'contact.p': 'Have a question or want to book a trial? Send a message — I usually reply within 24 hours.',
       'contact.whatsapp': 'WhatsApp',
       'contact.telegram': 'Telegram',
 
+      // Speaking Club page
+      'back': 'Back',
+      'sc.title': 'Speaking Club flow',
+      'sc.subtitle': 'TG @AMUR_ENGLISH — Speaking and Movie Clubs',
+      'sc.t5': '5min',
+      'sc.t10': '10min',
+      'sc.t30': '30min',
+      'sc.left1.title': 'SHARE IMPRESSIONS AFTER WATCHING',
+      'sc.left1.note': 'what you liked/did not like, what was difficult, etc.',
+      'sc.left2.title': 'COMMUNICATION TASKS',
+      'sc.left2.note': 'questions, make a ranking, solve a problem, etc.',
+      'sc.right1.title': 'INTRO / SMALL TALK',
+      'sc.right1.note': 'Short greetings',
+      'sc.right2.title': 'VOCABULARY WORK',
+      'sc.right2.note': 'match words with descriptions, fill in gaps, etc.',
+      'sc.right3.title': 'FEEDBACK',
+      'sc.right3.note': 'error review, feedback, share impressions',
+
+      // Footer
       'footer.role': 'English Tutor',
     },
     ru: {
@@ -102,18 +122,29 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'hero.subtitle': 'Общий английский, разговорный клуб, IELTS и т.д.',
       'hero.cta': 'Связаться',
 
+      // Nav
       'nav.about': 'Обо мне',
       'nav.experience': 'Опыт',
       'nav.courses': 'Курсы',
       'nav.pricing': 'Цены',
       'nav.contact': 'Контакты',
+      'nav.sc': 'Разговорный клуб',
 
-      'about.title': 'О Фариде',
-      'about.p': 'Я Фарида — преподаватель английского. Помогаю подросткам и взрослым достигать целей. На уроках мы делаем упор на живую речь, понятную грамматику и полезную лексику. Атмосфера доброжелательная, занятия структурированные и мотивирующие.',
-      'about.li1': 'Уровни от начального до продвинутого',
-      'about.li2': 'Индивидуальный план обучения и домашние задания',
-      'about.li3': 'Гибкое расписание (онлайн)',
+      // Courses
+      'courses.title': 'Курсы',
+      'courses.c1.title': 'Пробный урок (25 мин)',
+      'courses.c1.p': 'Познакомимся, определим цели и уровень и составим план.',
+      'courses.c2.badge': 'Популярно',
+      'courses.c2.title': 'Разговорный клуб (60 мин, группа)',
+      'courses.c2.p': 'Интересные темы, настоящие диалоги и обратная связь для роста беглости.',
+      'courses.c2.button': 'Подробнее',
+      'courses.c3.badge': 'Лучше для 1:1',
+      'courses.c3.title': 'Индивидуальные уроки (45–60 мин)',
+      'courses.c3.p': 'Занятия по вашим целям: грамматика, словарь и уверенная речь.',
+      'courses.c4.title': 'IELTS (индивидуально)',
+      'courses.c4.p': 'Подготовка к баллу: пробные тесты и пошаговые задания.',
 
+      // Experience
       'exp.title': 'Опыт',
       'exp.p': 'Я веду разговорные клубы, готовлю к экзаменам и помогаю с повседневным английским для учёбы и работы. Ученики отмечают комфортную атмосферу, где не страшно говорить и легко прогрессировать.',
       'exp.c1.title': 'Ведущая разговорного клуба',
@@ -123,18 +154,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'exp.c3.title': 'Индивидуальный коучинг',
       'exp.c3.p': 'Программы под поездки, собеседования и учёбу за рубежом.',
 
-      'courses.title': 'Курсы',
-      'courses.c1.title': 'Пробный урок (25 мин)',
-      'courses.c1.p': 'Познакомимся, определим цели и уровень и составим план.',
-      'courses.c2.badge': 'Популярно',
-      'courses.c2.title': 'Разговорный клуб (60 мин, группа)',
-      'courses.c2.p': 'Интересные темы, настоящие диалоги и обратная связь для роста беглости.',
-      'courses.c3.badge': 'Лучше для 1:1',
-      'courses.c3.title': 'Индивидуальные уроки (45–60 мин)',
-      'courses.c3.p': 'Занятия по вашим целям: грамматика, словарь и уверенная речь.',
-      'courses.c4.title': 'IELTS (индивидуально)',
-      'courses.c4.p': 'Подготовка к баллу: пробные тесты и пошаговые задания.',
-
+      // Pricing
       'pricing.title': 'Цены',
       'pricing.trial.title': 'Пробный урок',
       'pricing.trial.amount': 'Бесплатно',
@@ -153,11 +173,31 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'pricing.note.pre': 'Нужен индивидуальный план (пакеты или корпоратив)?',
       'pricing.note.link': 'Свяжитесь со мной',
 
+      // Contact
       'contact.title': 'Контакты',
       'contact.p': 'Есть вопрос или хотите записаться на пробный урок? Напишите — обычно отвечаю в течение 24 часов.',
       'contact.whatsapp': 'WhatsApp',
       'contact.telegram': 'Telegram',
 
+      // Speaking Club page
+      'back': 'Назад',
+      'sc.title': 'Ход Speaking club',
+      'sc.subtitle': 'TG @AMUR_ENGLISH — Speaking and Movie Clubs',
+      'sc.t5': '5мин',
+      'sc.t10': '10мин',
+      'sc.t30': '30мин',
+      'sc.left1.title': 'ОБМЕН ВПЕЧАТЛЕНИЯМИ ОТ ПРОСМОТРА',
+      'sc.left1.note': 'что понравилось/не понравилось, что было сложно и т.д.',
+      'sc.left2.title': 'ЗАДАНИЯ НА КОММУНИКАЦИЮ',
+      'sc.left2.note': 'вопросы, составить рейтинг, решить проблему и т.д.',
+      'sc.right1.title': 'ЗНАКОМСТВО / SMALL TALK',
+      'sc.right1.note': 'Краткое приветствие',
+      'sc.right2.title': 'РАБОТА С ЛЕКСИКОЙ',
+      'sc.right2.note': 'совместить слово с описанием, вставить пропуски и т.д.',
+      'sc.right3.title': 'FEEDBACK',
+      'sc.right3.note': 'разбор ошибок, обратная связь, обмен впечатлениями',
+
+      // Footer
       'footer.role': 'Преподаватель английского',
     }
   };

@@ -93,18 +93,47 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   text-align: left;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;       /* vertically center */
+  justify-content: flex-start; /* push content left */
+  padding-left: 40px;         /* add left spacing */
 }
+
+.hero .container {
+  max-width: 800px;  /* keep content width tidy */
+  padding-left: 100px; /* space from left edge */
+  margin: 0;          /* override global centering */
+}
+
 .hero h1 {
-  font-size: 2.25rem;
+  font-size: 4.25rem;
   line-height: 1.2;
   color: #ffffff;
   text-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }
+
 .hero .subtitle {
+  font-size: 1.5rem;
   color: #ffffff;
   margin-top: 8px;
   margin-bottom: 16px;
   text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+.hero .btn.primary {
+  background-color: #2563eb; /* blue */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn.primary:hover {
+  background-color: #1e40af; /* darker blue */
 }
 
 .btn {
@@ -121,6 +150,28 @@ img {
 .btn.primary { background: #1e3a8a; color: #ffffff; border-color: #1e3a8a; box-shadow: 0 6px 16px rgba(30,58,138,0.35); }
 
 .btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
+
+/* Speaking Club page */
+.back-btn { background: rgba(255,255,255,0.1); color: #e2e8f0; border: 1px solid rgba(255,255,255,0.2); }
+.back-btn:hover { background: rgba(255,255,255,0.2); color: #fff; }
+
+.sc-hero { background: #fff; padding-top: 40px; padding-bottom: 8px; }
+.sc-hero h1 { font-size: 2rem; }
+
+.sc-timeline { background: #fff; padding-top: 16px; }
+.sc-flow { display: grid; grid-template-columns: 1fr auto 1fr; gap: 24px; align-items: start; }
+.sc-col { display: grid; gap: 24px; }
+.sc-center { display: grid; gap: 40px; justify-items: center; padding-top: 24px; }
+.sc-dot { width: 14px; height: 14px; border-radius: 50%; background: #f0abfc; border: 3px solid #111827; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+.sc-block { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 16px; box-shadow: 0 4px 12px rgba(2,6,23,0.06); }
+.sc-badge { display: inline-block; background: #f5d0fe; color: #111827; padding: 4px 10px; border-radius: 999px; font-weight: 600; margin-bottom: 8px; box-shadow: 0 2px 0 rgba(0,0,0,0.05); }
+.sc-block h3 { font-size: 1rem; margin-bottom: 6px; }
+.sc-block .note { color: #6b7280; font-size: 0.95rem; }
+
+@media (max-width: 800px) {
+  .sc-flow { grid-template-columns: 1fr; }
+  .sc-center { display: none; }
+}
 
 /* Grids */
 .two-col {
