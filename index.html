@@ -15,12 +15,16 @@
     <nav class="nav">
       <a class="logo" href="#home">Farida</a>
       <ul class="nav-list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#courses" data-i18n="nav.courses">Courses</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
+      <select id="lang" aria-label="Language">
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+      </select>
     </nav>
     
   </header>
@@ -29,12 +33,12 @@
     <section id="about" class="section">
       <div class="container two-col">
         <div>
-          <h2>About Farida</h2>
-          <p>Hi, I’m Farida — an English tutor helping teens and adults reach their goals. My lessons focus on real-life speaking, clear grammar, and vocabulary you’ll actually use. I keep classes friendly, structured, and motivating.</p>
+          <h2 data-i18n="about.title">About Farida</h2>
+          <p data-i18n="about.p">Hi, I’m Farida — an English tutor helping teens and adults reach their goals. My lessons focus on real-life speaking, clear grammar, and vocabulary you’ll actually use. I keep classes friendly, structured, and motivating.</p>
           <ul class="checklist">
-            <li>Beginner to advanced levels</li>
-            <li>Personal study plan and homework</li>
-            <li>Flexible schedule (online)</li>
+            <li data-i18n="about.li1">Beginner to advanced levels</li>
+            <li data-i18n="about.li2">Personal study plan and homework</li>
+            <li data-i18n="about.li3">Flexible schedule (online)</li>
           </ul>
         </div>
         <div class="profile">
@@ -45,20 +49,20 @@
 
     <section id="experience" class="section">
       <div class="container">
-        <h2>Experience</h2>
-        <p>I’ve guided learners through speaking clubs, exam prep, and day‑to‑day English for study and work. Students say they feel safe to speak, make mistakes, and improve fast.</p>
+        <h2 data-i18n="exp.title">Experience</h2>
+        <p data-i18n="exp.p">I’ve guided learners through speaking clubs, exam prep, and day‑to‑day English for study and work. Students say they feel safe to speak, make mistakes, and improve fast.</p>
         <div class="cards">
           <article class="card">
-            <h3>Speaking Club Host</h3>
-            <p>Weekly small-group sessions to unlock fluency, pronunciation, and confidence.</p>
+            <h3 data-i18n="exp.c1.title">Speaking Club Host</h3>
+            <p data-i18n="exp.c1.p">Weekly small-group sessions to unlock fluency, pronunciation, and confidence.</p>
           </article>
           <article class="card">
-            <h3>IELTS Preparation</h3>
-            <p>Targeted practice for Reading, Listening, Writing, and Speaking with proven strategies.</p>
+            <h3 data-i18n="exp.c2.title">IELTS Preparation</h3>
+            <p data-i18n="exp.c2.p">Targeted practice for Reading, Listening, Writing, and Speaking with proven strategies.</p>
           </article>
           <article class="card">
-            <h3>1:1 Coaching</h3>
-            <p>Custom programs for travel, work interviews, or university study abroad.</p>
+            <h3 data-i18n="exp.c3.title">1:1 Coaching</h3>
+            <p data-i18n="exp.c3.p">Custom programs for travel, work interviews, or university study abroad.</p>
           </article>
         </div>
       </div>
@@ -66,25 +70,25 @@
 
     <section id="courses" class="section">
       <div class="container">
-        <h2>Courses</h2>
+        <h2 data-i18n="courses.title">Courses</h2>
         <div class="cards">
           <article class="card">
-            <h3>Trial Lesson (25 min)</h3>
-            <p>Meet, set goals, check your level, and build a plan together.</p>
+            <h3 data-i18n="courses.c1.title">Trial Lesson (25 min)</h3>
+            <p data-i18n="courses.c1.p">Meet, set goals, check your level, and build a plan together.</p>
           </article>
           <article class="card popular">
-            <span class="badge">Popular</span>
-            <h3>Speaking Club (60 min, group)</h3>
-            <p>Fun topics, real conversation, and feedback to boost fluency.</p>
+            <span class="badge" data-i18n="courses.c2.badge">Popular</span>
+            <h3 data-i18n="courses.c2.title">Speaking Club (60 min, group)</h3>
+            <p data-i18n="courses.c2.p">Fun topics, real conversation, and feedback to boost fluency.</p>
           </article>
           <article class="card popular">
-            <span class="badge">Best for 1:1</span>
-            <h3>1:1 Lessons (45–60 min)</h3>
-            <p>Tailored classes for grammar, vocabulary, and confident speaking.</p>
+            <span class="badge" data-i18n="courses.c3.badge">Best for 1:1</span>
+            <h3 data-i18n="courses.c3.title">1:1 Lessons (45–60 min)</h3>
+            <p data-i18n="courses.c3.p">Tailored classes for grammar, vocabulary, and confident speaking.</p>
           </article>
           <article class="card">
-            <h3>IELTS Prep (1:1)</h3>
-            <p>Score-focused program with mock tests and task-by-task guidance.</p>
+            <h3 data-i18n="courses.c4.title">IELTS Prep (1:1)</h3>
+            <p data-i18n="courses.c4.p">Score-focused program with mock tests and task-by-task guidance.</p>
           </article>
         </div>
       </div>
@@ -92,44 +96,47 @@
 
     <section id="pricing" class="section">
       <div class="container">
-        <h2>Pricing</h2>
+        <h2 data-i18n="pricing.title">Pricing</h2>
         <div class="pricing-grid">
           <div class="price">
-            <h3>Trial Lesson</h3>
-            <p class="amount">Free</p>
-            <p class="note">25 minutes</p>
+            <h3 data-i18n="pricing.trial.title">Trial Lesson</h3>
+            <p class="amount" data-i18n="pricing.trial.amount">Free</p>
+            <p class="note" data-i18n="pricing.trial.note">25 minutes</p>
           </div>
           <div class="price popular">
-            <span class="badge">Popular</span>
-            <h3>Speaking Club</h3>
-            <p class="amount">$10</p>
-            <p class="note">per session (group)</p>
+            <span class="badge" data-i18n="pricing.sc.badge">Popular</span>
+            <h3 data-i18n="pricing.sc.title">Speaking Club</h3>
+            <p class="amount" data-i18n="pricing.sc.amount">$10</p>
+            <p class="note" data-i18n="pricing.sc.note">per session (group)</p>
           </div>
           <div class="price popular best">
-            <span class="badge">Best value</span>
-            <h3>1:1 Lesson</h3>
-            <p class="amount">$18</p>
-            <p class="note">45 minutes online</p>
+            <span class="badge" data-i18n="pricing.one.badge">Best value</span>
+            <h3 data-i18n="pricing.one.title">1:1 Lesson</h3>
+            <p class="amount" data-i18n="pricing.one.amount">$18</p>
+            <p class="note" data-i18n="pricing.one.note">45 minutes online</p>
           </div>
           <div class="price">
-            <h3>IELTS Prep</h3>
-            <p class="amount">$22</p>
-            <p class="note">60 minutes 1:1</p>
+            <h3 data-i18n="pricing.ielts.title">IELTS Prep</h3>
+            <p class="amount" data-i18n="pricing.ielts.amount">$22</p>
+            <p class="note" data-i18n="pricing.ielts.note">60 minutes 1:1</p>
           </div>
         </div>
-        <p class="small">Need a custom plan (packages or corporate)? <a href="#contact">Contact me</a>.</p>
+        <p class="small">
+          <span data-i18n="pricing.note.pre">Need a custom plan (packages or corporate)?</span>
+          <a href="#contact" data-i18n="pricing.note.link">Contact me</a>
+        </p>
       </div>
     </section>
     <section id="contact" class="section contact">
       <div class="container">
         <div>
-          <h2>Contact</h2>
-          <p>Have a question or want to book a trial? Send a message — I usually reply within 24 hours.</p>
+          <h2 data-i18n="contact.title">Contact</h2>
+          <p data-i18n="contact.p">Have a question or want to book a trial? Send a message — I usually reply within 24 hours.</p>
           <ul class="contact-list">
             <li><a href="tel:+900000000000" class="contact-link phone">+90 000 000 00 00</a></li>
             <li><a href="mailto:hello@example.com" class="contact-link email">hello@example.com</a></li>
-            <li><a href="https://wa.me/0000000000" target="_blank" rel="noopener" class="contact-link wa">WhatsApp</a></li>
-            <li><a href="https://t.me/username" target="_blank" rel="noopener" class="contact-link tg">Telegram</a></li>
+            <li><a href="https://wa.me/0000000000" target="_blank" rel="noopener" class="contact-link wa" data-i18n="contact.whatsapp">WhatsApp</a></li>
+            <li><a href="https://t.me/username" target="_blank" rel="noopener" class="contact-link tg" data-i18n="contact.telegram">Telegram</a></li>
           </ul>
         </div>
       </div>
@@ -138,7 +145,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Farida — English Tutor</p>
+      <p>&copy; <span id="year"></span> <span>Farida — </span><span data-i18n="footer.role">English Tutor</span></p>
     </div>
   </footer>
 
