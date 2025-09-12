@@ -49,6 +49,8 @@ img {
   z-index: 1000; /* keep header above content */
 }
 
+
+
 .nav {
   display: flex;
   align-items: center;
@@ -515,4 +517,17 @@ img {
 /* Desktop/tablet SC spacing */
 @media (min-width: 601px) {
   .sc-steps { gap: 24px; }
+}
+
+/* Speaking Club flow spacing */
+.sc-steps { gap: 32px; }
+.sc-step { padding: 18px; }
+
+@media (max-width: 600px) {
+  .sc-steps { gap: 40px; }
+  .sc-step { padding: 18px; }
+}
+
+@media (min-width: 601px) {
+  .sc-steps { gap: 48px; }
 }
