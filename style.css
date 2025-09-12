@@ -509,7 +509,7 @@ img {
       margin-left: auto; /* pushes it to the far right */
     }
      .sc-steps { gap: 40px; }
-  .sc-step { padding: 16px; }
+  .sc-step { padding: 16px; } 
 }
 
 /* Desktop/tablet SC spacing */
