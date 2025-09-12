@@ -47,18 +47,23 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'nav.sc': 'Speaking Club',
 
       // Courses
+      'courses.c1.badge': 'Free',
       'courses.title': 'Courses',
       'courses.c1.title': 'Trial Lesson (25 min)',
       'courses.c1.p': 'Meet, set goals, check your level, and build a plan together.',
       'courses.c2.badge': 'Popular',
       'courses.c2.title': 'Speaking Club (60 min, group)',
-      'courses.c2.p': 'Fun topics, real conversation, and feedback to boost fluency.',
+      'courses.c2.p': 'Discuss psychology, science, and cutting-edge topics; have real conversations; and get feedback to boost your fluency',
       'courses.c2.button': 'View details',
       'courses.c3.badge': 'Best for 1:1',
       'courses.c3.title': '1:1 Lessons (45–60 min)',
-      'courses.c3.p': 'Tailored classes for grammar, vocabulary, and confident speaking.',
-      'courses.c4.title': 'IELTS Prep (1:1)',
-      'courses.c4.p': 'Score-focused program with mock tests and task-by-task guidance.',
+      'courses.c3.p': 'Master English through personalized practice in all key areas: conversational speaking, academic writing, critical reading, and natural listening',
+      'courses.c4.title': 'Group English Classes (60-80 min)',
+      'courses.c4.p': 'Available for all levels: beginner, pre-intermediate, intermediate, upper-intermediate, and advanced C1.',
+      'courses.c5.title': 'IELTS Prep (individual/group)',
+      'courses.c5.p': 'Score-focused program with mock tests and task-by-task guidance.',
+      'courses.c6.title': 'Reading Club (60 minutes)',
+      'courses.c6.p': 'We read scientific articles and discuss them to expand vocabulary, understand ideas, and practice speaking.',
 
       // Experience
       'exp.title': 'Experience',

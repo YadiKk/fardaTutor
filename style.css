@@ -71,9 +71,25 @@ img {
   gap: 18px;
 }
 
-.nav-list a { color: #e2e8f0; text-decoration: none; padding: 6px 8px; border-radius: 6px; transition: color .2s ease, background .2s ease, box-shadow .2s ease; }
+
+.nav-list a { color: #ffffff; text-decoration: none; padding: 6px 8px; border-radius: 6px; transition: color .2s ease, background .2s ease, box-shadow .2s ease; }
 
 .nav-list a:hover { background: rgba(255,255,255,0.08); color: #ffffff; box-shadow: 0 0 0 2px rgba(255,255,255,0.06) inset; }
+
+/* Contact button in navigation - green background */
+.nav-list a[href="#contact"] { 
+  background: #10b981; /* emerald-500 */
+  color: #ffffff; 
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+}
+
+.nav-list a[href="#contact"]:hover { 
+  background: #059669; /* emerald-600 */
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.4);
+}
 
 .lang-wrap select {
   appearance: none;
@@ -125,7 +141,7 @@ img {
 }
 
 .hero .btn.primary {
-  background-color: #2563eb; /* blue */
+  background-color: #10b981; /* blue */
   color: #fff;
   padding: 10px 20px;
   border-radius: 8px;
@@ -136,7 +152,7 @@ img {
 }
 
 .hero .btn.primary:hover {
-  background-color: #1e40af; /* darker blue */
+  background-color: #0e8d60; /* darker blue */
 }
 
 .btn {
@@ -150,7 +166,7 @@ img {
   transition: transform .15s ease, box-shadow .2s ease, filter .2s ease, background .2s ease;
 }
 
-.btn.primary { background: #1e3a8a; color: #ffffff; border-color: #1e3a8a; box-shadow: 0 6px 16px rgba(30,58,138,0.35); }
+.btn.primary { background: #1e3a8a; color: #ffffff; border-color: #0e8d60; box-shadow: 0 6px 16px rgba(30,58,138,0.35); }
 
 .btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
 
@@ -186,7 +202,7 @@ img {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
   margin-top: 12px;
 }
@@ -432,6 +448,20 @@ img {
 .mobile-nav-list a:hover {
   background: rgba(255,255,255,0.08);
   color: #ffffff;
+}
+
+/* Contact button in mobile navigation - green background */
+.mobile-nav-list a[href*="#contact"] { 
+  background: #10b981; /* emerald-500 */
+  color: #ffffff; 
+  font-weight: 600;
+  margin: 4px 0;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+}
+
+.mobile-nav-list a[href*="#contact"]:hover { 
+  background: #059669; /* emerald-600 */
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.4);
 }
 
 /* Mobile responsive improvements */
