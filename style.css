@@ -208,12 +208,12 @@ img {
 }
 
 .card {
-  border: 1px solid #e2e8f0;
+  border: 1px solid #818cf8;
   border-radius: 12px;
   padding: 16px;
-  background: #ffffff;
+  background: #eef2ff;
 }
-.card.popular { border-color: #818cf8; background: #eef2ff; }
+.card.popular { border-color: #e2e8f0; background: #ffffff; }
 .badge { display: inline-block; margin-bottom: 8px; padding: 4px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; background: #7c3aed; color: #ffffff; box-shadow: 0 4px 12px rgba(124,58,237,.3); }
 
 .card:hover {
