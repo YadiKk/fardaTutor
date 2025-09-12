@@ -31,22 +31,22 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // --- i18n ---
 (function () {
-  let translations = {
-    en: {},
-    ru: {},
-  };
-
-  const embedded = {
+  const translations = {
     en: {
+      // Hero
       'hero.title': 'English with Farida',
       'hero.subtitle': 'General English, Speaking Club, IELTS etc.',
       'hero.cta': 'Contact',
+
+      // Nav
       'nav.about': 'About',
       'nav.experience': 'Experience',
       'nav.courses': 'Courses',
       'nav.pricing': 'Pricing',
       'nav.contact': 'Contact',
       'nav.sc': 'Speaking Club',
+
+      // Courses
       'courses.title': 'Courses',
       'courses.c1.title': 'Trial Lesson (25 min)',
       'courses.c1.p': 'Meet, set goals, check your level, and build a plan together.',
@@ -59,6 +59,8 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'courses.c3.p': 'Tailored classes for grammar, vocabulary, and confident speaking.',
       'courses.c4.title': 'IELTS Prep (1:1)',
       'courses.c4.p': 'Score-focused program with mock tests and task-by-task guidance.',
+
+      // Experience
       'exp.title': 'Experience',
       'exp.p': 'I’ve guided learners through speaking clubs, exam prep, and day‑to‑day English for study and work. Students say they feel safe to speak, make mistakes, and improve fast.',
       'exp.c1.title': 'Speaking Club Host',
@@ -67,6 +69,8 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'exp.c2.p': 'Targeted practice for Reading, Listening, Writing, and Speaking with proven strategies.',
       'exp.c3.title': '1:1 Coaching',
       'exp.c3.p': 'Custom programs for travel, work interviews, or university study abroad.',
+
+      // Pricing
       'pricing.title': 'Pricing',
       'pricing.trial.title': 'Trial Lesson',
       'pricing.trial.amount': 'Free',
@@ -84,10 +88,14 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'pricing.ielts.note': '60 minutes 1:1',
       'pricing.note.pre': 'Need a custom plan (packages or corporate)?',
       'pricing.note.link': 'Contact me',
+
+      // Contact
       'contact.title': 'Contact',
       'contact.p': 'Have a question or want to book a trial? Send a message — I usually reply within 24 hours.',
       'contact.whatsapp': 'WhatsApp',
       'contact.telegram': 'Telegram',
+
+      // Speaking Club page
       'back': 'Back',
       'sc.title': 'Speaking Club flow',
       'sc.subtitle': 'TG @AMUR_ENGLISH — Speaking and Movie Clubs',
@@ -105,18 +113,25 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'sc.right2.note': 'match words with descriptions, fill in gaps, etc.',
       'sc.right3.title': 'FEEDBACK',
       'sc.right3.note': 'error review, feedback, share impressions',
+
+      // Footer
       'footer.role': 'English Tutor',
     },
     ru: {
+      // Hero
       'hero.title': 'Английский с Фаридой',
       'hero.subtitle': 'Общий английский, разговорный клуб, IELTS и т.д.',
       'hero.cta': 'Связаться',
+
+      // Nav
       'nav.about': 'Обо мне',
       'nav.experience': 'Опыт',
       'nav.courses': 'Курсы',
       'nav.pricing': 'Цены',
       'nav.contact': 'Контакты',
       'nav.sc': 'Разговорный клуб',
+
+      // Courses
       'courses.title': 'Курсы',
       'courses.c1.title': 'Пробный урок (25 мин)',
       'courses.c1.p': 'Познакомимся, определим цели и уровень и составим план.',
@@ -129,6 +144,8 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'courses.c3.p': 'Занятия по вашим целям: грамматика, словарь и уверенная речь.',
       'courses.c4.title': 'IELTS (индивидуально)',
       'courses.c4.p': 'Подготовка к баллу: пробные тесты и пошаговые задания.',
+
+      // Experience
       'exp.title': 'Опыт',
       'exp.p': 'Я веду разговорные клубы, готовлю к экзаменам и помогаю с повседневным английским для учёбы и работы. Ученики отмечают комфортную атмосферу, где не страшно говорить и легко прогрессировать.',
       'exp.c1.title': 'Ведущая разговорного клуба',
@@ -137,6 +154,8 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'exp.c2.p': 'Точечная практика чтения, аудирования, письма и речи с проверенными стратегиями.',
       'exp.c3.title': 'Индивидуальный коучинг',
       'exp.c3.p': 'Программы под поездки, собеседования и учёбу за рубежом.',
+
+      // Pricing
       'pricing.title': 'Цены',
       'pricing.trial.title': 'Пробный урок',
       'pricing.trial.amount': 'Бесплатно',
@@ -154,10 +173,14 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'pricing.ielts.note': '60 минут 1:1',
       'pricing.note.pre': 'Нужен индивидуальный план (пакеты или корпоратив)?',
       'pricing.note.link': 'Свяжитесь со мной',
+
+      // Contact
       'contact.title': 'Контакты',
       'contact.p': 'Есть вопрос или хотите записаться на пробный урок? Напишите — обычно отвечаю в течение 24 часов.',
       'contact.whatsapp': 'WhatsApp',
       'contact.telegram': 'Telegram',
+
+      // Speaking Club page
       'back': 'Назад',
       'sc.title': 'Ход Speaking club',
       'sc.subtitle': 'TG @AMUR_ENGLISH — Speaking and Movie Clubs',
@@ -175,6 +198,8 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'sc.right2.note': 'совместить слово с описанием, вставить пропуски и т.д.',
       'sc.right3.title': 'FEEDBACK',
       'sc.right3.note': 'разбор ошибок, обратная связь, обмен впечатлениями',
+
+      // Footer
       'footer.role': 'Преподаватель английского',
     }
   };
@@ -182,13 +207,8 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
   const langSelect = document.getElementById('lang');
   const defaultLang = localStorage.getItem('lang') || 'en';
 
-  function deepMerge(target, source) {
-    Object.keys(source).forEach((k) => { target[k] = source[k]; });
-    return target;
-  }
-
   function applyTranslations(lang) {
-    const dict = translations[lang] || embedded[lang] || embedded.en;
+    const dict = translations[lang] || translations.en;
     document.documentElement.lang = lang;
     document.querySelectorAll('[data-i18n]').forEach((el) => {
       const key = el.getAttribute('data-i18n');
@@ -202,30 +222,9 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
     });
   }
 
-  // Load external JSON then apply (with cache-busting)
-  const cacheBuster = `v=${Date.now()}`;
-  fetch(`js/i18n.json?${cacheBuster}`)
-    .then((res) => res.ok ? res.json() : Promise.reject(new Error('Failed to load i18n.json')))
-    .then((json) => {
-      translations.en = deepMerge(embedded.en, json.en || {});
-      translations.ru = deepMerge(embedded.ru, json.ru || {});
-      const lang = localStorage.getItem('lang') || defaultLang;
-      applyTranslations(lang);
-      if (langSelect) langSelect.value = lang;
-    })
-    .catch((err) => {
-      translations = embedded;
-      if (location.protocol === 'file:') {
-        console.warn('i18n.json cannot be fetched over file://. Run a local server or deploy to http(s).');
-      } else {
-        console.warn('Falling back to embedded translations:', err && err.message);
-      }
-      const lang = localStorage.getItem('lang') || defaultLang;
-      applyTranslations(lang);
-      if (langSelect) langSelect.value = lang;
-    });
-
+  applyTranslations(defaultLang);
   if (langSelect) {
+    langSelect.value = defaultLang;
     langSelect.addEventListener('change', function () {
       const lang = langSelect.value;
       localStorage.setItem('lang', lang);

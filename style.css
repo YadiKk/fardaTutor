@@ -323,23 +323,23 @@ img {
 .sc-arrow { position: absolute; right: -6px; top: 50%; transform: translateY(-50%); opacity: .8; }
 
 @media (min-width: 700px) {
-  .sc-steps { gap: 22px; }
+  .sc-steps { gap: 40px; }
   .sc-step { padding: 18px 56px 18px 18px; }
   .sc-arrow { right: 8px; }
 }
 
 /* Speaking Club sequential section header */
-.sc-seq .sc-title { font-size: 2.75rem; letter-spacing: 0.02em; margin-bottom: 4px; text-transform: uppercase; }
-.sc-seq .sc-subtitle { color: #64748b; text-transform: uppercase; margin-bottom: 16px; font-size: 0.9rem; }
+.sc-seq .sc-title { font-size: 2rem; letter-spacing: 0.02em; margin-bottom: 4px; text-transform: uppercase; }
+.sc-seq .sc-subtitle { color: #64748b; text-transform: uppercase; margin-bottom: 16px; font-size: 0.95rem; }
 /* Ok işaretleri otomatik eklensin */
 .sc-step::after {
   content: "";
   position: absolute;
-  bottom: -22px; /* step bloğunun altına */
+  bottom: -25px; /* step bloğunun altına */
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 22px;
+  height: 25px;
   background: #9ca3af; /* gri çizgi */
 }
 
@@ -350,11 +350,11 @@ img {
 .sc-step::after {
   content: "";
   position: absolute;
-  bottom: -28px;
+  bottom: -36px;
   left: 50%;
   transform: translateX(-50%);
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 5v14m0 0l-7-7m7 7l7-7'/></svg>") no-repeat center;
   background-size: contain;
 }
@@ -466,4 +466,53 @@ img {
 
 @media (max-width: 700px) {
   .sc-tracks { grid-template-columns: 1fr; }
+}
+
+/* SC small section label */
+.sc-section {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1e293b;
+  background: #e2e8f0;
+  border-radius: 999px;
+  padding: 4px 10px;
+  margin-bottom: 10px;
+}
+
+/* Speaking Club sequential section header */
+.sc-seq .sc-title { font-size: 2rem; letter-spacing: 0.02em; margin-bottom: 4px; text-transform: uppercase; }
+.sc-seq .sc-subtitle { color: #64748b; text-transform: uppercase; margin-bottom: 16px; font-size: 0.95rem; }
+
+/* Unify step and sub-headings */
+.sc-steps .sc-step h3 { font-size: 1rem; }
+.sc-suitable { font-size: 1.1rem; }
+
+@media (max-width: 600px) {
+  .sc-seq .sc-title { font-size: 1.5rem; }
+  .sc-seq .sc-subtitle { font-size: 0.85rem; }
+  .sc-steps .sc-step h3 { font-size: 0.95rem; }
+  .sc-suitable { font-size: 1.0rem; }
+}
+
+/* Mobile header spacing and SC mobile layout tweaks */
+@media (max-width: 600px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* pushes left and right items apart */
+  }
+    .logo { gap: 10px; }
+    .lang-wrap {
+      margin-left: auto; /* pushes it to the far right */
+    }
+     .sc-steps { gap: 40px; }
+  .sc-step { padding: 16px; }
+}
+
+/* Desktop/tablet SC spacing */
+@media (min-width: 601px) {
+  .sc-steps { gap: 24px; }
 }
