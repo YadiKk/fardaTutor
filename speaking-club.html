@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
   <header class="site-header">
     <nav class="nav">
       <a class="logo" href="index.html">
-        <img src="Ph/logo.png" alt="Farida logo" class="logo-img" loading="lazy">
+        <img src="Ph/logo.png" alt="Farida logo" class="logo-img" loading="lazy" data-i18n="alt.logo">
         <span class="logo-text">Farida</span>
       </a>
       <ul class="nav-list">
@@ -34,12 +34,13 @@
       <div style="display:flex; gap:8px; align-items:center;">
         <a href="index.html" class="btn back-btn">← <span data-i18n="back">Back</span></a>
         <div class="lang-wrap">
-          <select id="lang" aria-label="Language">
+          <select id="lang" aria-label="Language" data-i18n="aria.language">
             <option value="en">EN</option>
             <option value="ru">RU</option>
+            <option value="az">AZ</option>
           </select>
         </div>
-        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" data-i18n="aria.menu">
           <span></span>
           <span></span>
           <span></span>
@@ -62,7 +63,7 @@
     <section class="section sc-seq">
       <div class="container">
         <div class="sc-section" data-i18n="nav.sc">Speaking Club</div>
-        <h1 class="sc-title" data-i18n="sc.title">ХОД SPEAKING CLUB</h1>
+        <h1 class="sc-title" data-i18n="sc.title">Speaking Club flow</h1>
         <p class="sc-subtitle" data-i18n="sc.subtitle">TG @AMUR_ENGLISH — SPEAKING AND MOVIE CLUBS</p>
 
         <ol class="sc-steps">
@@ -107,11 +108,11 @@
         <div class="sc-tracks">
           <div class="track">
             <h3>A2–B1</h3>
-            <a class="btn primary" href="https://t.me/username" target="_blank" rel="noopener">Join Telegram</a>
+            <a class="btn primary" href="https://t.me/username" target="_blank" rel="noopener" data-i18n="telegram.join">Join Telegram</a>
           </div>
           <div class="track">
             <h3>B2–C1</h3>
-            <a class="btn primary" href="https://t.me/username" target="_blank" rel="noopener">Join Telegram</a>
+            <a class="btn primary" href="https://t.me/username" target="_blank" rel="noopener" data-i18n="telegram.join">Join Telegram</a>
           </div>
         </div>
       </div>

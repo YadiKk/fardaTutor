@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
   <header class="site-header" id="home">
     <nav class="nav">
       <a class="logo" href="index.html">
-        <img src="Ph/logo.png" alt="Farida logo" class="logo-img" loading="lazy">
+        <img src="Ph/logo.png" alt="Farida logo" class="logo-img" loading="lazy" data-i18n="alt.logo">
         <span class="logo-text">Farida</span>
       </a>
       <ul class="nav-list">
@@ -32,12 +32,13 @@
         <li><a href="speaking-club.html" data-i18n="nav.sc">Speaking Club</a></li>
       </ul>
       <div class="lang-wrap">
-        <select id="lang" aria-label="Language">
+        <select id="lang" aria-label="Language" data-i18n="aria.language">
           <option value="en">EN</option>
           <option value="ru">RU</option>
+          <option value="az">AZ</option>
         </select>
       </div>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" data-i18n="aria.menu">
         <span></span>
         <span></span>
         <span></span>
@@ -98,8 +99,20 @@
             <p data-i18n="courses.c5.p">Score-focused program with mock tests and task-by-task guidance.</p>
           </article>
           <article class="card">
-            <h3 data-i18n="courses.c6.title">Reading clup</h3>
-            <p data-i18n="courses.c6.p">Score-focused program with mock tests and task-by-task guidance.</p>
+            <h3 data-i18n="courses.c6.title">Reading Club</h3>
+            <p data-i18n="courses.c6.p">Improve reading comprehension and vocabulary through engaging texts and discussions.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="courses.c9.title">Speaking Lesson 1:1 (30–60 min)</h3>
+            <p data-i18n="courses.c9.p">Boost your English, expand your vocabulary, and speak confidently!</p>
+          </article>
+          <article class="card lang-specific" data-lang="ru" style="display: none;">
+            <h3 data-i18n="courses.c7.title">ЕГЭ / ОГЭ по английскому языку</h3>
+            <p data-i18n="courses.c7.p">Углублённый разбор формата экзамена, тренировка ключевых стратегий и повышение уровня владения языком.</p>
+          </article>
+          <article class="card lang-specific" data-lang="az" style="display: none;">
+            <h3 data-i18n="courses.c8.title">Abturyent Hazırlığı</h3>
+            <p data-i18n="courses.c8.p">9 və 11-ci sinif üzrə buraxılış imtahanına (DİM) ingilis dili hazırlığı – dərslər həftədə 3 dəfə, 6–12 nəfərlik qruplarda keçirilir.</p>
           </article>
         </div>
       </div>
@@ -117,7 +130,7 @@
           </ul>
         </div>
         <div class="profile">
-          <img src="Ph/profile.jpg" alt="Portrait of Farida, English tutor" loading="lazy">
+          <img src="Ph/profile.jpg" alt="Portrait of Farida, English tutor" loading="lazy" data-i18n="alt.profile">
         </div>
       </div>
     </section>

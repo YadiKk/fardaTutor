@@ -91,6 +91,20 @@ img {
   box-shadow: 0 4px 8px rgba(16, 185, 129, 0.4);
 }
 
+.nav-list a[href="index.html#contact"] { 
+  background: #10b981; /* emerald-500 */
+  color: #ffffff; 
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+}
+
+.nav-list a[href="index.html#contact"]:hover { 
+  background: #059669; /* emerald-600 */
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.4);
+}
+
 .lang-wrap select {
   appearance: none;
   -webkit-appearance: none;
