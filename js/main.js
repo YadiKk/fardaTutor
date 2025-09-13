@@ -29,6 +29,31 @@ if (form) {
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// Theme toggle functionality
+(function() {
+  const themeToggle = document.getElementById('theme-toggle');
+  const defaultTheme = localStorage.getItem('theme') || 'light';
+  
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }
+  
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(newTheme);
+  }
+  
+  // Initialize theme
+  applyTheme(defaultTheme);
+  
+  // Add event listener
+  if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+  }
+})();
+
 // --- i18n ---
 (function () {
   const translations = {
@@ -140,6 +165,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'alt.profile': 'Portrait of Farida, English tutor',
       'aria.language': 'Language',
       'aria.menu': 'Toggle menu',
+      'aria.theme': 'Toggle dark mode',
 
       // Footer
       'footer.role': 'English Tutor',
@@ -252,6 +278,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'alt.profile': 'Портрет Фариды, преподавателя английского языка',
       'aria.language': 'Язык',
       'aria.menu': 'Переключить меню',
+      'aria.theme': 'Переключить темную тему',
 
       // Footer
       'footer.role': 'Преподаватель английского',
@@ -364,6 +391,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'alt.profile': 'Faridanın portreti, İngilis dili müəllimi',
       'aria.language': 'Dil',
       'aria.menu': 'Menyunu dəyiş',
+      'aria.theme': 'Qaranlıq rejimi dəyiş',
 
       // Footer
       'footer.role': 'İngilis dili müəllimi',
