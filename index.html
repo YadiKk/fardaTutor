@@ -24,11 +24,28 @@
         <span class="logo-text">Farida</span>
       </a>
       <ul class="nav-list">
-        <li><a href="#about" data-i18n="nav.about">About</a></li>
-        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
-        <li><a href="#courses" data-i18n="nav.courses">Courses</a></li>
-        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+        <!-- About + Experience dropdown -->
+        <li class="dropdown">
+          <a data-i18n="nav.about">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+          </ul>
+        </li>
+  
+        <!-- Courses + Pricing dropdown -->
+        <li class="dropdown">
+          <a data-i18n="nav.courses">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a href="#courses" data-i18n="nav.courses">Courses</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          </ul>
+        </li>
+  
+        <!-- Contact -->
         <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+  
+        <!-- Speaking Club -->
         <li><a href="speaking-club.html" data-i18n="nav.sc">Speaking Club</a></li>
       </ul>
       <div class="nav-controls">
@@ -54,21 +71,38 @@
         <span></span>
         <span></span>
       </button>
-    </div>
-  </nav>
-  <div class="mobile-menu">
-    <ul class="mobile-nav-list">
-      <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
-      <li><a href="index.html#experience" data-i18n="nav.experience">Experience</a></li>
-      <li><a href="index.html#courses" data-i18n="nav.courses">Courses</a></li>
-      <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
-      <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
-      <li><a href="speaking-club.html" data-i18n="nav.sc">Speaking Club</a></li>
-    </ul>
-  </div>
     </nav>
-    
+  
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+      <ul class="mobile-nav-list">
+        <!-- About + Experience dropdown -->
+        <li class="dropdown">
+          <a data-i18n="nav.about">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+            <li><a href="index.html#experience" data-i18n="nav.experience">Experience</a></li>
+          </ul>
+        </li>
+
+        <!-- Courses + Pricing dropdown -->
+        <li class="dropdown">
+          <a data-i18n="nav.courses">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#courses" data-i18n="nav.courses">Courses</a></li>
+            <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          </ul>
+        </li>
+
+        <!-- Contact -->
+        <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+
+        <!-- Speaking Club -->
+        <li><a href="speaking-club.html" data-i18n="nav.sc">Speaking Club</a></li>
+      </ul>
+    </div>
   </header>
+  
 
   <main>
     <section id="hero" class="section hero" style="min-height:100vh; background:url('Ph/Bg.png') center/cover no-repeat; text-align:left; display:flex; align-items:center;">
@@ -194,6 +228,21 @@
             <h3 data-i18n="pricing.ielts.title">IELTS Prep</h3>
             <p class="amount" data-i18n="pricing.ielts.amount">$22</p>
             <p class="note" data-i18n="pricing.ielts.note">60 minutes 1:1</p>
+          </div>
+          <div class="price">
+            <h3 data-i18n="pricing.group.title">Group English Classes</h3>
+            <p class="amount" data-i18n="pricing.group.amount">$12</p>
+            <p class="note" data-i18n="pricing.group.note">60-80 minutes (group)</p>
+          </div>
+          <div class="price">
+            <h3 data-i18n="pricing.reading.title">Reading Club</h3>
+            <p class="amount" data-i18n="pricing.reading.amount">$8</p>
+            <p class="note" data-i18n="pricing.reading.note">per session (group)</p>
+          </div>
+          <div class="price">
+            <h3 data-i18n="pricing.speaking.title">Speaking Lesson 1:1</h3>
+            <p class="amount" data-i18n="pricing.speaking.amount">$15</p>
+            <p class="note" data-i18n="pricing.speaking.note">30-60 minutes</p>
           </div>
         </div>
         <p class="small">

@@ -129,6 +129,15 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'pricing.ielts.title': 'IELTS Prep',
       'pricing.ielts.amount': '$22',
       'pricing.ielts.note': '60 minutes 1:1',
+      'pricing.group.title': 'Group English Classes',
+      'pricing.group.amount': '$12',
+      'pricing.group.note': '60-80 minutes (group)',
+      'pricing.reading.title': 'Reading Club',
+      'pricing.reading.amount': '$8',
+      'pricing.reading.note': 'per session (group)',
+      'pricing.speaking.title': 'Speaking Lesson 1:1',
+      'pricing.speaking.amount': '$15',
+      'pricing.speaking.note': '30-60 minutes',
       'pricing.note.pre': 'Need a custom plan (packages or corporate)?',
       'pricing.note.link': 'Contact me',
 
@@ -242,6 +251,15 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'pricing.ielts.title': 'IELTS',
       'pricing.ielts.amount': '$22',
       'pricing.ielts.note': '60 минут 1:1',
+      'pricing.group.title': 'Групповые занятия по английскому',
+      'pricing.group.amount': '$12',
+      'pricing.group.note': '60-80 минут (группа)',
+      'pricing.reading.title': 'Клуб чтения',
+      'pricing.reading.amount': '$8',
+      'pricing.reading.note': 'за занятие (группа)',
+      'pricing.speaking.title': 'Разговорный урок 1:1',
+      'pricing.speaking.amount': '$15',
+      'pricing.speaking.note': '30-60 минут',
       'pricing.note.pre': 'Нужен индивидуальный план (пакеты или корпоратив)?',
       'pricing.note.link': 'Свяжитесь со мной',
 
@@ -355,6 +373,15 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
       'pricing.ielts.title': 'IELTS hazırlığı',
       'pricing.ielts.amount': '$22',
       'pricing.ielts.note': '60 dəqiqə fərdi',
+      'pricing.group.title': 'Qrup İngilis dili dərsləri',
+      'pricing.group.amount': '$12',
+      'pricing.group.note': '60-80 dəqiqə (qrup)',
+      'pricing.reading.title': 'Oxu klubu',
+      'pricing.reading.amount': '$8',
+      'pricing.reading.note': 'sessiya başına (qrup)',
+      'pricing.speaking.title': 'Danışıq dərsi 1:1',
+      'pricing.speaking.amount': '$15',
+      'pricing.speaking.note': '30-60 dəqiqə',
       'pricing.note.pre': 'Fərdi plan lazımdır (paketlər və ya korporativ)?',
       'pricing.note.link': 'Mənimlə əlaqə',
 
@@ -455,23 +482,81 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
   }
 })();
 
-// Mobile menu toggle
+// Enhanced Mobile menu toggle
 document.addEventListener('DOMContentLoaded', function() {
   const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
   const mobileMenu = document.querySelector('.mobile-menu');
   
   if (mobileMenuToggle && mobileMenu) {
-    mobileMenuToggle.addEventListener('click', function() {
+    // Toggle mobile menu
+    mobileMenuToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
       mobileMenu.classList.toggle('active');
+      mobileMenuToggle.classList.toggle('active');
     });
     
     // Close menu when clicking outside
     document.addEventListener('click', function(e) {
       if (!mobileMenuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
         mobileMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+      }
+    });
+    
+    // Close menu when window is resized to desktop
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 600) {
+        mobileMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
       }
     });
   }
+  
+  // Enhanced Mobile dropdown functionality
+  const mobileDropdowns = document.querySelectorAll('.mobile-nav-list .dropdown > a');
+  mobileDropdowns.forEach(dropdown => {
+    dropdown.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const parent = this.parentElement;
+      
+      // Close other dropdowns
+      document.querySelectorAll('.mobile-nav-list .dropdown').forEach(d => {
+        if (d !== parent) d.classList.remove('active');
+      });
+      
+      // Toggle clicked dropdown
+      parent.classList.toggle('active');
+    });
+  });
+  
+  // Close mobile dropdowns when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.mobile-nav-list .dropdown')) {
+      document.querySelectorAll('.mobile-nav-list .dropdown').forEach(d => {
+        d.classList.remove('active');
+      });
+    }
+  });
 });
 
+// Close dropdown if clicked outside
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+  }
+});
 
+document.querySelectorAll('.dropdown > a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    // only for mobile
+    if (window.innerWidth <= 767) {
+      e.preventDefault();
+      const parent = this.parentElement;
+      parent.classList.toggle('active');
+    }
+  });
+});
