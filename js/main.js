@@ -514,32 +514,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Delegated mobile menu interactions: toggle dropdowns and close on link tap
+  // Close mobile menu on any link tap (no dropdowns on mobile)
   const mobileNavList = document.querySelector('.mobile-nav-list');
   if (mobileNavList) {
-    function handleMenuInteraction(e) {
-      const headerLink = e.target.closest('.mobile-nav-list .dropdown > a');
-      if (headerLink) {
-        e.preventDefault();
-        e.stopPropagation();
-        const parent = headerLink.parentElement;
-        document.querySelectorAll('.mobile-nav-list .dropdown').forEach(d => {
-          if (d !== parent) d.classList.remove('active');
-        });
-        parent.classList.toggle('active');
-        return;
-      }
-
-      const anyLink = e.target.closest('.mobile-nav-list a');
-      if (anyLink) {
-        // Close menu on any navigation link tap
-        mobileMenu.classList.remove('active');
-        if (mobileMenuToggle) mobileMenuToggle.classList.remove('active');
-      }
-    }
-
-    mobileNavList.addEventListener('click', handleMenuInteraction);
-    mobileNavList.addEventListener('touchstart', handleMenuInteraction, { passive: true });
+    mobileNavList.addEventListener('click', function(e) {
+      const anyLink = e.target.closest('a');
+      if (!anyLink) return;
+      mobileMenu.classList.remove('active');
+      if (mobileMenuToggle) mobileMenuToggle.classList.remove('active');
+    });
   }
 });
 

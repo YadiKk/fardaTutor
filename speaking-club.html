@@ -24,11 +24,28 @@
         <span class="logo-text">Farida</span>
       </a>
       <ul class="nav-list">
-        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
-        <li><a href="index.html#experience" data-i18n="nav.experience">Experience</a></li>
-        <li><a href="index.html#courses" data-i18n="nav.courses">Courses</a></li>
-        <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+        <!-- About + Experience dropdown (desktop) -->
+        <li class="dropdown">
+          <a data-i18n="nav.about">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+            <li><a href="index.html#experience" data-i18n="nav.experience">Experience</a></li>
+          </ul>
+        </li>
+
+        <!-- Courses + Pricing dropdown (desktop) -->
+        <li class="dropdown">
+          <a data-i18n="nav.courses">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#courses" data-i18n="nav.courses">Courses</a></li>
+            <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          </ul>
+        </li>
+
+        <!-- Contact (desktop) -->
         <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+
+        <!-- Speaking Club (desktop) -->
         <li><a href="speaking-club.html" data-i18n="nav.sc">Speaking Club</a></li>
       </ul>
       <div style="display:flex; gap:8px; align-items:center;">
