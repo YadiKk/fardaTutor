@@ -1173,3 +1173,184 @@ img {
 [data-theme="dark"] .mobile-nav-list .dropdown-menu li a:hover::before {
   color: var(--text-primary);
 }
+
+/* ===== Restored Dark Mode (previous working version) ===== */
+[data-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: #475569;
+  --accent-color: #3b82f6;
+  --accent-hover: #2563eb;
+}
+
+[data-theme="dark"] body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .section:nth-of-type(odd) { 
+  background: var(--bg-secondary); 
+}
+
+[data-theme="dark"] .section:nth-of-type(even) { 
+  background: var(--bg-primary); 
+}
+
+[data-theme="dark"] .site-header {
+  background: rgba(15, 23, 42, 0.9);
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .card {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .card.popular {
+  background: var(--bg-tertiary);
+  border-color: var(--accent-color);
+}
+
+[data-theme="dark"] .price {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .price.popular {
+  background: var(--bg-tertiary);
+  border-color: var(--accent-color);
+}
+
+[data-theme="dark"] .price.best {
+  background: var(--bg-tertiary);
+  border-color: #ef4444;
+}
+
+[data-theme="dark"] .btn {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .btn:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--accent-color);
+}
+
+[data-theme="dark"] .btn.primary {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+}
+
+[data-theme="dark"] .btn.primary:hover {
+  background: var(--accent-hover);
+}
+
+[data-theme="dark"] .contact-link {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .contact-link:hover {
+  background: var(--bg-tertiary);
+}
+
+[data-theme="dark"] .contact-link.email {
+  background: #1e3a8a;
+  color: #93c5fd;
+  border-color: #3b82f6;
+}
+
+[data-theme="dark"] .contact-link.phone {
+  background: #164e63;
+  color: #67e8f9;
+  border-color: #06b6d4;
+}
+
+[data-theme="dark"] .contact-link.wa {
+  background: #065f46;
+  color: #6ee7b7;
+  border-color: #10b981;
+}
+
+[data-theme="dark"] .contact-link.tg {
+  background: #3730a3;
+  color: #a5b4fc;
+  border-color: #6366f1;
+}
+
+[data-theme="dark"] .site-footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .site-footer p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .small {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .note {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .sc-step {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .sc-tracks .track {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .sc-section {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .mobile-menu {
+  background: rgba(15, 23, 42, 0.95);
+  border-top: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .mobile-nav-list a {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .mobile-nav-list a:hover {
+  background: rgba(255,255,255,0.08);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .mobile-nav-list a[href*="#contact"] {
+  background: var(--accent-color);
+  color: white;
+}
+
+[data-theme="dark"] .mobile-nav-list a[href*="#contact"]:hover {
+  background: var(--accent-hover);
+}
+
+[data-theme="dark"] .back-btn {
+  background: rgba(255,255,255,0.1);
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .back-btn:hover {
+  background: rgba(255,255,255,0.2);
+  color: var(--text-primary);
+}
