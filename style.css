@@ -552,6 +552,31 @@ img {
   transition: all .25s ease;
 }
 
+.pricing-disclaimer {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.pricing-disclaimer p {
+  color: #92400e;
+  font-weight: 500;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+[data-theme="dark"] .pricing-disclaimer {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: #f59e0b;
+}
+
+[data-theme="dark"] .pricing-disclaimer p {
+  color: #fbbf24;
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -797,9 +822,45 @@ img {
   border-color: var(--border-color);
 }
 
+[data-theme="light"] .sc-suitable {
+  color: #000000;
+}
+  
+
 [data-theme="dark"] .back-btn:hover {
   background: rgba(255,255,255,0.2);
   color: var(--text-primary);
+}
+
+/* Ensure Contact button keeps the same green in dark mode (desktop) */
+[data-theme="dark"] .nav-list a[href="#contact"],
+[data-theme="dark"] .nav-list a[href="index.html#contact"] {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+[data-theme="dark"] .hero.cta a[href="#contact"] 
+
+[data-theme="dark"] .nav-list a[href="#contact"]:hover,
+[data-theme="dark"] .nav-list a[href="index.html#contact"]:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+}
+
+/* Keep Hero CTA contact link green in dark mode (not blue) */
+[data-theme="dark"] .hero a.btn.primary[href="#contact"] {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-color: rgba(255,255,255,0.2);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+}
+
+[data-theme="dark"] .hero a.btn.primary[href="#contact"]:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
 }
 
 /* Responsive adjustments */
@@ -873,6 +934,48 @@ img {
   border-radius: 999px;
   padding: 4px 10px;
   margin-bottom: 10px;
+}
+
+.cta-center {
+  text-align: center;
+  margin-top: 2rem; /* spacing from courses */
+}
+
+/* Pricing button style */
+.section .btn.primary[href="#pricing"] {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px; /* full rounded */
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.section .btn.primary[href="#pricing"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+}
+ 
+/* All view detail buttons */
+.card .btn {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px; /* full rounded pill */
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
 }
 
 /* Speaking Club sequential section header */
@@ -1353,4 +1456,17 @@ img {
 [data-theme="dark"] .back-btn:hover {
   background: rgba(255,255,255,0.2);
   color: var(--text-primary);
+}
+
+/* Ensure Contact button keeps the same green in dark mode (mobile) */
+[data-theme="dark"] .mobile-nav-list a[href*="#contact"] {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+[data-theme="dark"] .mobile-nav-list a[href*="#contact"]:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
 }
